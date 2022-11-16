@@ -1,5 +1,6 @@
 import Nav from './pages/nav'
 import CssBaseline from '@mui/material/CssBaseline';
+import About from './pages/about'
 
 function App() {
   return (
@@ -7,6 +8,7 @@ function App() {
 <>
 <CssBaseline />
 <Nav/>
+<About/>
 
 
 </>
