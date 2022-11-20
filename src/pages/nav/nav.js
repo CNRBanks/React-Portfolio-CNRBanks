@@ -18,20 +18,20 @@ import importedResume from "../../assets/Gopher.jpg"
 // const pages = ['Work', 'About Me', 'Contact Me'];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
-const ResponsiveAppBar = ({ pageTipio, hacePageTipio }) => {
+const ResponsiveAppBar = ({ pageState, setPageState }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
   const abrirWork = () => {
-    hacePageTipio({ ...pageTipio, work: true, about: false, contact: false });
+    setPageState({ ...pageState, work: true, about: false, contact: false });
   };
 
   const abrirAbout = () => {
-    hacePageTipio({ ...pageTipio, work: false, about: true, contact: false });
+    setPageState({ ...pageState, work: false, about: true, contact: false });
   };
 
   const abrirContact = () => {
-    hacePageTipio({ ...pageTipio, work: false, about: false, contact: true });
+    setPageState({ ...pageState, work: false, about: false, contact: true });
   };
 
   const handleOpenNavMenu = (event) => {
@@ -57,17 +57,9 @@ const ResponsiveAppBar = ({ pageTipio, hacePageTipio }) => {
           <Typography
             variant="h6"
             noWrap
-            component="a"
+            component="div"
             href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
+            sx={{ mr: 2, display: { xs: "none", md: "flex" } }}
           >
             Connor Banks
           </Typography>
@@ -139,7 +131,7 @@ const ResponsiveAppBar = ({ pageTipio, hacePageTipio }) => {
               onClick={abrirWork}
               sx={{ my: 2, color: "white", display: "block" }}
             >
-              Work
+              MY Work
             </Button>
             <Button
               onClick={abrirAbout}
