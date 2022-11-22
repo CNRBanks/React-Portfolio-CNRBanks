@@ -2,8 +2,9 @@ import {useState } from 'react'
 import Nav from './pages/nav';
 import CssBaseline from '@mui/material/CssBaseline';
 import AboutMe from './pages/about'
-import MyWork from './pages/work';
-import ContactMe from './pages/contact';
+import MyWork from './pages/MyWork';
+import Contact from './pages/Contact';
+import Footer from './pages/footer'
 
 
 function App() {
@@ -16,9 +17,10 @@ function App() {
   <>
 <CssBaseline />
 <Nav pageState={pageState} setPageState={setPageState} />
+{pageState.work? <MyWork />: ''}
 {pageState.about? <AboutMe />: ''}
-{pageState.mywork? <MyWork />: ''}
-{pageState.contact? <ContactMe />: ''}
+{pageState.contact? <Contact />: ''}
+<Footer />
 </>
   );
 }
