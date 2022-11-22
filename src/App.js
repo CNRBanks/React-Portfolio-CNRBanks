@@ -3,7 +3,7 @@ import Nav from './pages/nav';
 import CssBaseline from '@mui/material/CssBaseline';
 import AboutMe from './pages/about'
 import MyWork from './pages/MyWork';
-import Contact from './pages/Contact';
+import Contact from './pages/contact';
 import Footer from './pages/footer'
 
 
