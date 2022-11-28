@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/static/css/main.78f6b088.css",
+    "main.js": "/static/js/main.7eb56b03.js",
+    "static/media/Gopher.jpg": "/static/media/Gopher.0c3f29ab721e473d85b5.jpg",
+    "static/media/miFoto.png": "/static/media/miFoto.11b89327d3bf918cc835.png",
+    "index.html": "/index.html",
+    "main.78f6b088.css.map": "/static/css/main.78f6b088.css.map",
+    "main.7eb56b03.js.map": "/static/js/main.7eb56b03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.78f6b088.css",
+    "static/js/main.7eb56b03.js"
+  ]
+}
